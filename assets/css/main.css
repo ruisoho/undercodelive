@@ -21,7 +21,6 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -52,6 +51,10 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+}
+
+.wrapper.style2 h2 {
+	color: #fff;
 }
 
 mark {
@@ -96,11 +99,6 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-
-	body {
-		background: #66b6e0;
-	}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -115,8 +113,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		color: #333;
+		font-family: "Rubik", sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -158,12 +156,17 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #333;
 		}
 
+	.menu b {
+		color: #fff;
+	}
+
 	strong, b {
-		color: #feffff;
-		font-weight: bold;
+		color: #333;
+		font-weight: 600;
+		font-style: italic;
 	}
 
 	em, i {
@@ -171,17 +174,15 @@ input, select, textarea {
 	}
 
 	p ,a {
-		color: #feffff;
+		color: feffff;
 		margin: 0 0 2em 0;
 	}
-	p.resources{
-		color: #05386b;
-	}
+
 	p.idea {
 		color: #17252a;
 		}
 	h1, h2, h3, h4, h5, h6 {
-		color: #05386b;
+		color: #333;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1839,9 +1840,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
-		border-radius: 3em;
-		color: #ffffff !important;
+		border-color: #333;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -2002,7 +2001,7 @@ input, select, textarea {
 		.features section {
 			padding: 3.5em 3em 1em 7em ;
 			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			border-top: 1px solid #333;
 			position: relative;
 		}
 
@@ -2301,7 +2300,6 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2322,10 +2320,9 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: none;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: 1px solid #333;
 		color: inherit;
 		display: block;
-		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
@@ -2428,7 +2425,7 @@ input, select, textarea {
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				background: rgba(255, 255, 255, 0.05);
-				border-radius: 0.25em;
+				/* border-radius: 0.25em; */
 				border: solid 1px rgba(255, 255, 255, 0.15);
 				content: '';
 				display: inline-block;
@@ -3232,23 +3229,24 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #3aafa9;
+			background-color: #fff;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #3aafa9;
+			background-color: #333;
 		}
 
 		.wrapper.style2 {
-			background-color: #3aafa9;
+			background-color: #333;
+			color: #fff;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3aafa9;
+			background-color: #333;
 		}
 
 		.wrapper.style3 {
-			background-color: #5cdb95;
+			background-color: #f2f3f7;
 		}
 
 		.wrapper.style3-alt {
@@ -3359,14 +3357,14 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #05386b;
+		background-color: #5e42a6;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
 
 		#header > .title {
 			border: 0;
-			color: #feffff;
+			color: #ffffff;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3411,7 +3409,7 @@ input, select, textarea {
 						}
 
 						#header > nav > ul > li a.active {
-							color: #feffff;
+							color: #ffffff;
 						}
 
 		@media screen and (max-width: 736px) {
@@ -3513,7 +3511,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #05386b;
+		background: #333;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3896,51 +3894,12 @@ input, select, textarea {
 			}
 
 		}
-		
-/* Resources Grid*/
 
-/* Center website */
-.main {
-	max-width: 1000px;
-	margin: auto;
-  }
-  
-  h1 {
-	font-size: 50px;
-	word-break: break-all;
-  }
-  
-  .row {
-	margin: 10px -16px;
-  }
-  
-  /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
-	padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-	float: left;
-	width: 33.33%;
-	display: none; /* Hide all elements by default */
-  }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  
-  /* Content */
-  .content {
-	background-color: white;
-	padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-	display: block;
-  }
+.actions .button:hover {
+	background: #fff;
+	color: #333;
+}
+
+.actions .scrolly:hover {
+	border: 1px solid #333;
+}

@@ -190,7 +190,6 @@
 
 })(jQuery);
 
-// Resources Filter.
 
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
@@ -240,10 +239,10 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-/* Resources Load more Button*/
+/* Resources Load more Button
 
 $(function(){
-    $("div").slice(0, 5).show(); // select the first ten
+    $("div").slice(0, 10).show(); // select the first ten
     $("#load").click(function(e){ // click event for load more
         e.preventDefault();
         $("div:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
@@ -252,3 +251,5 @@ $(function(){
         }
     });
 });
+
+*/

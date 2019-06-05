@@ -31,6 +31,11 @@ body {
 	line-height: 1;
 }
 
+.orange {
+	background-color: #ff4e00;
+	color: #fff;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -3902,4 +3907,15 @@ input, select, textarea {
 
 .actions .scrolly:hover {
 	border: 1px solid #333;
+}
+
+/* Resources Grid*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.flex {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
